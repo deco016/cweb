@@ -51,4 +51,4 @@ if(OPENSSL_FOUND)
     target_link_libraries(cweb INTERFACE ${OPENSSL_LIBRARIES})
     target_include_directories(cweb INTERFACE ${OPENSSL_INCLUDE_DIR})
 endif()
-
+install(FILES server_http.hpp client_http.hpp server_https.hpp client_https.hpp crypto.hpp utility.hpp status_code.hpp DESTINATION include/cweb)
